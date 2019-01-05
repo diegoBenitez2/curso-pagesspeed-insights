@@ -4,9 +4,14 @@
        <meta charset="utf-8"/>
        <title>Portafolio_DiegoB</title>     
        <link rel="icon" type="image/png" href="imgs/favicon.jpg">
- </head>      
+       <link rel="stylesheet" href="./css/estilos.css">
+       <style>
+              header{
+                     background: red;}
+</style>
+ </head>
  <body>
-  <header>
+  <header style="background: green">
     <div>
               <figure>
                      <img src="imgs/logo.png"  alt="logo de http://leonidaEsteban.org"/>
@@ -15,13 +20,13 @@
               <nav>
               <ol >
               <li>
-                     <a href="#">Portafolio</a>      
+                     <a href="./index.html">Portafolio</a>      
               </li> 
               <li>
-                     <a href="#">Experiencia</a>      
+                     <a href="#eventos">Experiencia</a>      
               </li>
               <li>
-                     <a href="#" >Trabajemos juntos</a>      
+                     <a href="#contacto" >Trabajemos juntos</a>      
               </li>     
               </ol>      
               </nav>      
@@ -31,7 +36,7 @@
    <h1>Q tal! Soy <strong>Diego Benitez</strong><br> Desarrollador <strong>Javascript</strong>y<br> Diseño<strong>User Experience</strong> </h1>     
    <img src="imgs/hero.jpg" width="500" alt="imagen principal del sitio"> 
   </section> 
-  <section>
+  <section id="portafolio">
    <article>
     <h2>Portafolio (Proyectos destacados)</h2>   
     <h3>Platzi Video</h3>
@@ -43,7 +48,7 @@
        <img src="imgs/platzi-video-react-native.png" width="600" alt="img platzi -video">
        </article>      
   </section>
-  <section>
+  <section id="eventos">
      <h2>MAS SOBRE MI EXPERIENCIA</h2>    
      <article>
        <figure>
@@ -52,10 +57,10 @@
        <h3>PlatziConf Mexico 2018</h3>     
        <p>El evento mas grande sobre gente que quiere aprender mas de internet En este evento te comparto como tener una
                vida constante de aprendizaje.</p>
-       <a>Ver Platica</a>        
+       <a href="https://www.youtube.com/watch?v=eFCiycex5MA" target="_blank">Ver Platica</a>        
        </article>    
   </section>
-  <section>
+  <section id="contacto">
          <form action="subscripcion">
                      <h3>¿Creamos algo juntos?</h3>
                      <!--<label for="email">dejame tu email</label>-->
