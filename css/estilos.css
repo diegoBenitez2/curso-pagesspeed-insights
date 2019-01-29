@@ -7,7 +7,10 @@ valore*/
 
 body {
      font-family:'Source Sans Pro',sans-serif;
+     margin: 0px;
 } 
+
+
 
 h1,
 h2,
@@ -22,11 +25,35 @@ h1{
        line-height: 1.5;
        letter-spacing: -.2px;
        color: white;
+      margin-top: 0px;
       /* text-transform: uppercase
       text-decoration: dashed;;*/
 }
 h1 strong{
 color: #026fff;
+}
+.portfolio{
+       background:#fafafa;
+}
+.project{
+      /* border-top:  10px solid red;
+       border-right: 10px solid green;
+       border-left: 10px solid orange;
+       border-right: 10px solid blue;
+       border-top-color: red;
+       border-top-width: 15px;
+       border-bottom: 10px solid pink;
+       border-top-style: solid;*/
+       border: 1px solid gray;
+       border-radius: 10px;
+       margin-bottom: 15px;
+       margin:10px;
+       padding:20px;
+       background: white;
+
+      /* margin-right:0px;
+       margin-left:0px;
+       margin-top:0px;*/
 }
 .project-details{
        width: 500px;
@@ -42,8 +69,53 @@ color: #026fff;
 .header{
        background-color: #1b2127;
        color: white;
+       display: flex;
+        /*align-items: center;*/
+       justify-content: space-between;
+       height: 90px;
+      
+       
+}
+.menu{
+       height: inherit;
+}
+
+ol,ul{
+       margin: 0px;
+       padding: 0px;
+       list-style: none;
+}
+figure{
+       margin: 0;
 }
 .header a{
        color:white;
        text-decoration: none;
+       display: flex;
+       align-items: center;
+       height: inherit;
+       padding: 0 10px;
 }
+.header ol{
+       display: flex;
+       height: inherit;
+}
+.header ol li{
+height: inherit;
+
+}
+
+/*.flexBox{
+display: flex;
+/*flex-direction: column;*/
+/*flex-shrink: 0;
+flex-wrap: nowrap;
+flex-wrap: wrap;
+}
+.box{
+       width:50px;
+       height:50px;
+       border: 1px solid red;
+       margin: 5px;
+              }*/
+              
