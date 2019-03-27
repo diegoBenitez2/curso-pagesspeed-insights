@@ -2,8 +2,92 @@
 declaraciones
 selectores
 propiedades
-declaraciones
-valore*/
+declaraciones*/
+
+/* fuente de icono  de menu */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts_menu/icomoon.eot?1xsv2f');
+  src:  url('../fonts_menu/icomoon.eot?1xsv2f#iefix') format('embedded-opentype'),
+    url('../fonts_menu/icomoon.ttf?1xsv2f') format('truetype'),
+    url('../fonts_menu/icomoon.woff?1xsv2f') format('woff'),
+    url('../fonts_menu/icomoon.svg?1xsv2f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 17px;
+  color:black;
+  z-index: 4;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e905";
+ 
+}
+/* fuentes de iconos de socia media */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ppxzn7');
+  src:  url('../fonts/icomoon.eot?ppxzn7#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ppxzn7') format('truetype'),
+    url('../fonts/icomoon.woff?ppxzn7') format('woff'),
+    url('../fonts/icomoon.svg?ppxzn7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="social-"], [class*=" social-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+   display: inline-block;
+  line-height: 1;
+  color:white;
+  font-size: 50px; 
+  margin: 0px 10px; 
+  text-decoration: none;
+
+ 
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.social-github:before {
+  content: "\e904";
+}
+.social-instagram:before {
+  content: "\e902";
+}
+.social-twitter:before {
+  content: "\e900";
+  
+}
+.social-facebook:before {
+  content: "\e901";
+}
+.social-github:before {
+  content: "\e903";
+}
 
 body {
      font-family:'Source Sans Pro',sans-serif;
@@ -63,20 +147,27 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     /* margin-right:0px;
     margin-left:0px;
     margin-top:0px;*/
 }
 .project-details{
-       width: 500px;
+  width: 50%;
+}
+.project-imageContainer{
+  width: 50%;
+}
+.project-imageContainer img{
+  max-width: 100%;
 }
 .project-title{
     font-size: 30px;
-    margin:0;
+    margin-bottom: .3em;
 }
 .project-course,.project-date,.project-ur{
-    margin:10px 0; 
+    margin:.4em  0; 
 }
 .project-description{
     font-size: 20px;
@@ -94,6 +185,7 @@ h2{
     display: flex; 
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   
 }
 .header{
@@ -103,6 +195,7 @@ h2{
     align-items: center;
     justify-content: space-between;
     height: 70px;
+    flex-wrap: wrap;
        
       
        
@@ -144,6 +237,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer img{
     vertical-align: middle;
@@ -158,8 +252,8 @@ figure{
     flex-wrap: wrap;
 }
 .event{
-margin: 10px;
-width: 480px;
+margin: 1%;
+width: 48%;
 flex-shrink: 0;
 border-radius: 10px;
 overflow: hidden;
@@ -179,6 +273,7 @@ background-color: #f4fbff;
   margin-top: -40px;
   position: relative;
   text-align: center;
+  
 }
 .event-description{
   text-align: left;
@@ -204,13 +299,16 @@ background-color: #f4fbff;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; 
     }
 
   .social{
    
    height: 50px;;
   }
-  .social-link{
+  /* insertar imagenes desde css con background-images */
+
+  /* .social-link{
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -231,7 +329,7 @@ background-color: #f4fbff;
   }
   .social-link.instagram{
     background-image:url('../imgs/instagram.svg');
-  }
+  } */
   .form-email input{
     border-color: gray;
     border-style: solid;
@@ -262,7 +360,10 @@ background-color: #f4fbff;
   }
 .container{
   /* border: 1px solid red; */
-  width: 1000px;
+  max-width:1000px;
+  /* width: 100%; */
+  flex: 1;
+ 
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -277,7 +378,217 @@ background-color: #f4fbff;
   width:  500px;
   object-fit: cover;
 }
+.html-video{
+  width: 100%;
+  height: auto;
+}
+.youtube-video{
+  width: 100%;
+  height: 100%;
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
 
+}
+.flexible-video{
+  padding-top: 56.25%;
+  width: 100%;
+  height: 0;
+  background: blue;
+  position: relative;
+
+}
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:rgba(0,0,0,.8);
+  display: none;
+  line-height: 40px;
+  text-align:center;
+  position:fixed;
+  top: 5px;
+  left: 5px;
+  color: white;
+  
+
+}
+
+/* destokp first que empieces desde el MQ mas grande */
+@media screen and (max-width: 1024px) 
+{
+  .event-description{
+      text-align:center;
+      margin: .5em .5em 1em;
+    }
+    .container{
+      padding: 0 1em;
+     justify-content: space-between;
+   
+    }
+    .contact-title {
+      margin: .5em auto;
+    }
+    .hero{
+      height:auto ;
+      position:relative;
+      overflow: hidden;
+      padding: 2em;
+   
+    }
+    .hero-images{
+      position: absolute;
+      z-index:1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom:0;
+      width: 100%;
+      filter: opacity(80%) blur(1px);
+     }
+     img.hero-images{
+       object-position: 0 100%;
+     }
+    h1{
+      z-index: 2;
+      font-size: 2em;
+      padding-left: 1.2em;
+        text-shadow: 1px2px2px#000;
+    }
+   
+    }
+@media screen and (max-width: 767px) 
+{
+  .burger-button{
+    display: block;
+  }
+  .header{
+    display:block;
+    height:auto;/*initial*/
+  }
+  .header ol{
+    display: initial;
+    /* display: block; */
+  }
+  .header ol li{
+    height: 50px;
+   }
+   .header a{
+  justify-content:  center;
+  height: 40px;
+  font-size: 2em;
+  text-decoration: underline;
+  margin-bottom: .5em;
+   }
+   .header .logo {
+   text-align: center;
+   }
+   .menu{
+     position: fixed;
+     background:rgba(5, 111, 255,.9); 
+     z-index: 3;
+     top: 0;
+      left: -100vw; 
+     width: 100vw;
+      bottom: 0;  
+     /* height: 100vh;  */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: .3s;
+     
+   }
+   .menu.is-active{
+     left: 0;
+  
+
+   }
+   .project{
+     display: block;
+   }
+   .project-details{
+     width:auto;
+     font-size:16px;
+   }
+   .project-imageContainer{
+     width:auto;
+     text-align:center;
+   }
+   .project-description{
+     text-align: justify;
+     font-size: .8em;
+   }
+   .project-title{
+     font-size: 1.5em;
+   }
+   .project-course{
+     font-size: 1.2em;
+   }
+   .project-date{
+     font-size: 1em;
+   }
+   .project-url{
+     font-size:1em;
+   }
+   .event{
+     width: auto;
+     flex-shrink: initial;
+    }
+    .event img {
+      width: 100%;
+      object-position: 0 25%;
+      
+    }
+}
+@media screen and (max-width: 480px) 
+{
+  h1{
+    font-size: 1.5em;
+  }
+  .project-details{
+     width:auto;
+     font-size:12px;
+   }
+  .event-details{
+     margin:-2em .5em .5em;
+     padding: .5em;
+    }
+    .contact{
+      height: auto;
+      padding: 1em 0;
+      display: block;
+      text-align: center;
+    }
+    .form-email button{
+      margin:1em  auto;
+    }
+    .form-email h3{
+      margin-top: 0;
+    }
+    .footer{
+      display: block;
+      text-align: center;
+     border: 1px solid transparent;
+    }
+    .footer p{
+      margin:.5em 0;
+    }
+  
+@media screen and (max-width: 320px) 
+{
+  h1{
+    font-size: 1.2em;
+  }
+.container{
+  padding: 0;
+}
+.hero{
+  padding: 2em 1em;
+}
+
+}
 
 
 /*.flexBox{
