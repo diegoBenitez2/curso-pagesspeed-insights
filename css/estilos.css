@@ -90,7 +90,7 @@ declaraciones*/
 }
 
 body {
-     font-family:'Source Sans Pro',sans-serif;
+     font-family:'Source Sans Pro','Segoe UI';
      margin: 0px;
 } 
 
@@ -102,7 +102,7 @@ h3,
 h4,
 h5,
 h6{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', 'Segoe UI';
 }
 h1{
     font-size: 40px;
@@ -111,6 +111,7 @@ h1{
     color: white;
     margin-top: 0px;
     margin: 0;
+    max-width: 500px;
     /* text-transform: uppercase
     text-decoration: dashed;;*/
 }
@@ -120,7 +121,7 @@ h1 strong{
 h2{
     color: #026fff;
     text-transform: uppercase;
-    font-family:'Source Sans Pro',sans-serif;
+    font-family:'Source Sans Pro','Segoe UI';
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
@@ -173,7 +174,7 @@ h2{
     font-size: 20px;
 }
 .project strong{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', 'Segoe UI';
 }
 .hero{
     height: 300px;
@@ -356,7 +357,7 @@ background-color: #f4fbff;
     width: 100px;
   }
   .form-email h3{
-    font-family: 'Source Sans Pro',sans-serif;
+    font-family: 'Source Sans Pro','Segoe UI';
   }
 .container{
   /* border: 1px solid red; */
