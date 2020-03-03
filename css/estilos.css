@@ -419,6 +419,9 @@ bottom: 0;
 /* destokp first que empieces desde el MQ mas grande */
 @media screen and (max-width: 1024px) 
 {
+  h2{
+    margin-top:20px;
+  }
   .event-description{
       text-align:center;
       margin: .5em .5em 1em;
